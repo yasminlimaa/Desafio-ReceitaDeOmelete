@@ -21,4 +21,4 @@ Ideal para quem busca uma refeição rápida e deliciosa!
 
 1. Clone este repositório para o seu computador:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/yasminlimaa/Desafio-ReceitaDeOmelete.git
