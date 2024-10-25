@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body {
+  background: #F3E6D8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+.receita-container {
+  background:#FFFFFF ;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #5F574E;
+}
+
+.receita-titulo {
+  font-size: 2.2rem;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  margin: 10px 40px;
+  color: #302D2C;
+}
+
+.receita-texto{
+  font-family: 'Outfit';
+  margin: 5px 40px;
+}
+
+.preparo-container {
+  background: #FFF5FA;
+  padding: 20px 10px;
+  margin: 30px 40px;
+  border-radius: 20px;
+}
+
+.preparo-titulo {
+  font-size: 1.5rem;
+  font-family: 'Outfit';
+  margin: 10px 30px;
+  color: #7B284F;
+}
+
+.preparo-lista li::marker {
+  color: #7B284F;
+}
+
+.preparo-lista li, .instrucao-lista li, .tabela-lista li, .ingredientes-lista li{
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Outfit';
+}
+
+.ingredientes-container, .instrucao-container, .tabela-container {
+  margin: 5px 30px; 
+}
+
+.ingredientes-texto, .instrucao-texto {
+  font-family: 'Outfit';
+}
+
+.instrucao-lista li::marker, .ingredientes-lista li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
+.ingredientes-titulo, .instrucao-titulo, .tabela-titulo {
+  color: #854632;
+  font-family: 'Young Serif';
+  margin: 10px;
+}
+
+.ingredientes-lista li {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.tabela-container {
+  padding-bottom: 20px;
+}
+
+.tabela-texto {
+  margin: 10px;
+  font-family: 'Outfit';
+}
+
+.tabela-lista li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+}
+
+.tabela-lista li::before  {
+  display: block;
+  content: "";
+  width: 105%;
+  height: 1px;
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  background: #5F574E;
+}
+
+.tabela-titulo, .instrucao-titulo{
+  position: relative;
+  padding-top: 20px;
+}
+
+.tabela-titulo::after, .instrucao-titulo::after {
+  display: block;
+  content: "";
+  width: 102%;
+  height: 1px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background: #5F574E;
+}
+
+.tabela-lista span {
+  color: #854632;
+  font-weight: bold;
+}
+
+@media(max-width: 800px) {
+  .receita-container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  img{
+    border-radius: 0;
+  }
+
+  .instrucao-texto {
+    word-break: break-all;
+  }
+}
+
